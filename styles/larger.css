@@ -9,7 +9,7 @@
         font-size: 16px;
     }
 
-    /*@media screen and (min-width: 952px) {
+    @media screen and (min-width: 952px) {
         .checkbtn{
             display: block;
         }
@@ -38,4 +38,4 @@
         #check:checked ~ ul{
             left: 0;
         }
-    }/*
+    }
