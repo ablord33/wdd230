@@ -1,0 +1,27 @@
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    /* Hide the hamburger button */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Hide the menu */
+    .menu {
+      display: none;
+    }
+  
+    /* Show the menu when the hamburger is clicked */
+    .show-menu {
+      display: block;
+    }
+  
+    /* Make the menu vertical */
+    .menu {
+      flex-direction: column;
+    }
+  
+    /* Adjust the grid columns for events and spotlights */
+    .event-list, .spotlight-slider {
+      grid-template-columns: 1fr;
+    }
+  }

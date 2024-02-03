@@ -1,0 +1,270 @@
+/* Base styles for the website */
+
+/* Variables for colors */
+:root {
+    --primary-color: #0077b6; /* A blue color */
+    --secondary-color: #f4f4f4; /* A light gray color */
+    --accent-color: #fca311; /* An orange color */
+    --text-color: #333333; /* A dark gray color */
+  }
+  
+  /* Typography */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--accent-color);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+  }
+  
+  /* Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Navigation */
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--primary-color);
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 0.5rem;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  .menu li a.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* Main */
+  .main {
+    padding: 2rem;
+  }
+  
+  /* Hero */
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  /* Events */
+  .events {
+    margin: 2rem 0;
+  }
+  
+  .event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+  }
+  
+  .event-date .day {
+    font-size: 2rem;
+  }
+  
+  .event-date .month {
+    font-size: 1rem;
+  }
+  
+  .event-info {
+    padding: 0.5rem;
+  }
+  
+  /* Weather */
+  .weather {
+    margin: 2rem 0;
+  }
+  
+  .weather-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .weather-icon {
+    margin-right: 1rem;
+  }
+  
+  .weather-icon img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .weather-info .temp {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .weather-info .city {
+    font-size: 1.5rem;
+  }
+  
+  /* Spotlights */
+  .spotlights {
+    margin: 2rem 0;
+  }
+  
+  .spotlight-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .spotlight {
+    position: relative;
+  }
+  
+  .spotlight img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .spotlight-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info, .developer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  
