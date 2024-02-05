@@ -265,6 +265,37 @@
     display: flex;
     flex-direction: column;
   }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      "header header header"
+      "sidebar content ad"
+      "footer footer footer";
+  }
+  
+  .main-head {
+    grid-area: header;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .main-nav {
+    grid-area: sidebar;
+  }
+  
+  .side {
+    grid-area: ad;
+  }
+  
+  .main-footer {
+    grid-area: footer;
+  }
+  
   
 
   
