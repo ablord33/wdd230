@@ -1,32 +1,41 @@
-<!-- Copy the header, navigation, and footer content from your index.html page -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Add your existing CSS file here -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Ablordeppey - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by [Student Name]. Learn to plan, design, and develop websites using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Bright Ablordeppey">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <script src="https://kit.fontawesome.com/e771e00fa1.js" crossorigin="anonymous"></script>
+    <script src="../scripts/myScripts.js"></script>
+    <script src="../scripts/form.js"></script>
 </head>
 <body>
-  <header>
-    <!-- Your header content here -->
-  </header>
-  <nav>
-    <!-- Your navigation content here -->
-  </nav>
+    <header>
+        <img src="../images/homepage-image.jpg" alt="Profile photo of Bright Ablordeppey">
+        <span>Bright Ablordeppey</span>
+    </header>
+    <button id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
   <main>
-    <!-- Erase the content in the main area of the page -->
-    <!-- Create a form with a get method and action that points to thankyou.html -->
     <form method="get" action="thankyou.html">
-      <!-- Use a <fieldset> element to group the form elements -->
       <fieldset>
         <!-- Use a <legend> element to provide a title for the form -->
         <legend>Join our chamber</legend>
-        <!-- Use <label> elements to provide labels for each input field -->
-        <!-- Use the for attribute to associate the label with the input field -->
-        <!-- Use the id attribute to give each input field a unique identifier -->
-        <!-- Use the name attribute to give each input field a name for the server -->
-        <!-- Use the required attribute to make each input field mandatory -->
-        <!-- Use the type attribute to specify the type of input field -->
-        <!-- Use the placeholder attribute to provide an example input -->
-        <!-- Use the pattern attribute to specify a regular expression for validation -->
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" required><br>
         <label for="lname">Last name:</label>

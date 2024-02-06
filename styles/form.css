@@ -1,7 +1,7 @@
 :root {
     --main-color: #3CBC8D;
-    --text-color: white;
-    --border-color: #555;
+    --text-color: hwb(0 0% 100%);
+    --border-color: #0a0064;
   }
   
   form {
