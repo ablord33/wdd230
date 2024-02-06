@@ -1,22 +1,35 @@
-<!-- Copy the header, navigation, and footer content from your index.html page -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Add your existing CSS file here -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Ablordeppey - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal by [Student Name]. Learn to plan, design, and develop websites using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Bright Ablordeppey">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="https://kit.fontawesome.com/e771e00fa1.js" crossorigin="anonymous"></script>
+    <script src="scripts/myScripts.js"></script>
 </head>
 <body>
-  <header>
-    <!-- Your header content here -->
-  </header>
-  <nav>
-    <!-- Your navigation content here -->
-  </nav>
+    <header>
+        <img src="../images/homepage-image.jpg" alt="Profile photo of Bright Ablordeppey">
+        <span>Bright Ablordeppey</span>
+    </header>
+    <button id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
   <main>
-    <!-- Create a <div> element to display a thank you message -->
-    <!-- Use the class attribute to specify a CSS class for the div -->
-    <!-- Use the <h1> element to provide a heading for the message -->
-    <!-- Use the <p> element to provide some text for the message -->
-    <!-- Use the <a> element to provide a link to the home page -->
     <div class="thank-you">
       <h1>Thank you for joining our chamber!</h1>
       <p>We appreciate your interest and support. We will contact you soon with more information about your membership and benefits.</p>
@@ -24,7 +37,8 @@
     </div>
   </main>
   <footer>
-    <!-- Your footer content here -->
-  </footer>
+    <p>© <span id="year"></span> Bright Ablordeppey, Ghana 🇬🇭</p>
+    <p id="lastModified"></p>
+</footer>
 </body>
 </html>
