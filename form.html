@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Ablordeppey - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal Bright Ablordeppey. Learn to plan, design, and develop websites using HTML, CSS, and JavaScript.">
+    <meta name="author" content="[Student Name]">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/myScripts.js"></script>
+    <script src="scripts/forms.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/homepage-image.jpg" alt="Profile photo of Bright Ablordeppey">
+        <span>Bright Ablordeppey</span>
+    </header>
+    <button id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+<body>
+<h1>Web Form Example</h1>
+<form id="myForm" method="get" action="record.html">
+  <label for="username">Username</label>
+  <input type="text" id="username" name="username" required>
+  <label for="password">Password</label>
+  <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Please enter at least 8 alphanumeric characters">
+  <label for="confirm">Password repeated for confirmation</label>
+  <input type="password" id="confirm" name="confirm" required>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain">
+  <label for="rating">Page Rating</label>
+  <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5">
+  <span id="value">5</span>
+  <input type="submit" id="submit" value="Submit">
+</form>
+<footer>
+    <p>© <span id="year"></span> Bright Ablordeppey, Ghana 🇬🇭</p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>

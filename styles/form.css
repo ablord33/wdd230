@@ -1,0 +1,79 @@
+:root {
+    --main-color: #3CBC8D;
+    --text-color: white;
+    --border-color: #555;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--main-color);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: var(--main-color);
+  }
+  
+  input[type="password"] {
+    background-color: var(--main-color);
+    color: var(--text-color);
+  }
+  
+  input[type="email"] {
+    background-image: url('email.png');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+  }
+  
+  input[type="range"] {
+    -webkit-appearance: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  span {
+    display: block;
+    text-align: center;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .success {
+    color: green;
+    font-weight: bold;
+  }

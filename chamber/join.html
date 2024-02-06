@@ -1,0 +1,82 @@
+<!-- Copy the header, navigation, and footer content from your index.html page -->
+<html>
+<head>
+  <!-- Add your existing CSS file here -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Your header content here -->
+  </header>
+  <nav>
+    <!-- Your navigation content here -->
+  </nav>
+  <main>
+    <!-- Erase the content in the main area of the page -->
+    <!-- Create a form with a get method and action that points to thankyou.html -->
+    <form method="get" action="thankyou.html">
+      <!-- Use a <fieldset> element to group the form elements -->
+      <fieldset>
+        <!-- Use a <legend> element to provide a title for the form -->
+        <legend>Join our chamber</legend>
+        <!-- Use <label> elements to provide labels for each input field -->
+        <!-- Use the for attribute to associate the label with the input field -->
+        <!-- Use the id attribute to give each input field a unique identifier -->
+        <!-- Use the name attribute to give each input field a name for the server -->
+        <!-- Use the required attribute to make each input field mandatory -->
+        <!-- Use the type attribute to specify the type of input field -->
+        <!-- Use the placeholder attribute to provide an example input -->
+        <!-- Use the pattern attribute to specify a regular expression for validation -->
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="title">Title or position:</label>
+        <input type="text" id="title" name="title" required pattern="[A-Za-z-\s]{7,}"><br>
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com"><br>
+        <label for="phone">Mobile phone number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="business">Business/organization name:</label>
+        <input type="text" id="business" name="business" required><br>
+        <!-- Use a <select> element to create a dropdown list for the membership level -->
+        <!-- Use the <option> elements to provide the options for the list -->
+        <!-- Use the value attribute to specify the value for each option -->
+        <label for="membership">Membership level:</label>
+        <select id="membership" name="membership" required>
+          <option value="NP">NP Membership (no fee)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select><br>
+        <!-- Use a <textarea> element to create a multi-line text input for the description -->
+        <!-- Use the rows and cols attributes to specify the size of the textarea -->
+        <label for="description">Business/organization description:</label>
+        <textarea id="description" name="description" rows="5" cols="40"></textarea><br>
+        <!-- Use a hidden input field to store the timestamp -->
+        <!-- Use the value attribute to specify the current date and time -->
+        <input type="hidden" id="timestamp" name="timestamp" value="2024-02-06T17:19:03Z"><br>
+        <!-- Use an input of type submit to create a form submission button -->
+        <!-- Use the value attribute to specify the label for the button -->
+        <input type="submit" value="Join now">
+      </fieldset>
+    </form>
+    <!-- Use a <div> element to create a side column for the membership level benefits -->
+    <!-- Use the class attribute to specify a CSS class for the div -->
+    <!-- Use the <h3> element to provide a heading for the benefits -->
+    <!-- Use the <ul> and <li> elements to create a list of benefits for each level -->
+    <div class="side-column">
+      <h3>Membership level benefits</h3>
+      <ul>
+        <li>NP Membership: For non profit organizations. No fee. Access to basic resources and events.</li>
+        <li>Bronze Membership: For small businesses. Low fee. Access to basic and premium resources and events. One spotlight position on the home page per year.</li>
+        <li>Silver Membership: For medium businesses. Moderate fee. Access to basic, premium, and exclusive resources and events. Two spotlight positions on the home page per year. 10% discount on event fees.</li>
+        <li>Gold Membership: For large businesses. High fee. Access to all resources and events. Four spotlight positions on the home page per year. 20% discount on event fees. Free training sessions.</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <!-- Your footer content here -->
+  </footer>
+</body>
+</html>
