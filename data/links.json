@@ -1,0 +1,44 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week1/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "week1/activity2.html",
+            "title": "Activity 2"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week2/activity1.html",
+            "title": "Activity 1"
+          },
+          {
+            "url": "../form.html",
+            "title": "Activity 2"
+          }
+        ]
+      }
+      {
+        "week": "week 3",
+        "links":[
+            {
+                "url":"week3/activity1.html",
+                "title":"Activity 1"
+            }
+            {
+                "url":"week3/activity1.html",
+                "title":"Activity 1"
+            }
+        ]
+      }
+    ]
+  }
+  
