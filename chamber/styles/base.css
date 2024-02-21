@@ -296,6 +296,15 @@
     grid-area: footer;
   }
   
-  
+  .banner{
+    background-color: #0077b6;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    display: none;
+  }
 
-  
+  .close-button{
+    float: right;
+    cursor: pointer;
+  }

@@ -50,3 +50,18 @@ fetch(apiUrl)
     }
   })
   .catch(error => console.error(error)); // Handle any errors
+
+   // Add this JavaScript code snippet to your existing script // Function to close the banner 
+   function closeBanner() { 
+    document.getElementById('chamber-event-banner').style.display = 'none'; }
+     // Function to check if today is Monday, Tuesday, or Wednesday 
+     function isChamberEventDay() { 
+      const today = new Date().getDay(); 
+      // Get the day of the week (0-6, where 0 is Sunday) 
+      return today >= 1 && today <= 3; 
+      // Return true if today is Monday, Tuesday, or Wednesday 
+    } 
+    // Show the banner if today is a chamber event day 
+    if (isChamberEventDay()) { 
+      document.getElementById('chamber-event-banner').style.display = 'block'; 
+    }
